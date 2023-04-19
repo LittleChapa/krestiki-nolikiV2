@@ -13,7 +13,7 @@ btn.addEventListener("click", () => {
   tds.forEach((i) => {
     i.addEventListener("click", foo);
     i.innerHTML = "";
-    title.innerHTML = "Игра крестики-нолики";
+    title.innerHTML = "Игра Крестики-нолики";
     isX = true;
     isWin = false;
   });
