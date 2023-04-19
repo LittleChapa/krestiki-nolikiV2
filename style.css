@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+body,
+html {
+  height: 100%;
+  background-color: #a5d694;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.table {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 5px;
+  width: 80vh;
+  height: 80vh;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.title {
+  margin-bottom: 50px;
+  color: #234732;
+  font-weight: 700;
+}
+
+.table__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #afff92;
+  border: 10px solid #234732;
+  color: #234732;
+  border-radius: 20px;
+  font-size: 100px;
+  line-height: 50px;
+  cursor: default;
+}
+
+#btn {
+  background-color: #afff92;
+  border: 5px solid #234732;
+  color: #234732;
+  border-radius: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .table {
+    width: 80vw;
+    height: 80vw;
+  }
+  .table__item {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .table__item {
+    font-size: 65px;
+  }
+}
+
+@media (max-width: 320px) {
+  .table__item {
+    font-size: 50px;
+  }
+}
